@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-family: helvetica;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+main{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    width: 50%;
+}
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    margin: 15px 0;
+    font-size: 1.5em;
+    color:rgb(185, 156, 26);
+    font-weight: 700;
+}
+
+h1{
+    margin: 15px 0;
+    font-size: 3em;
+}
+
+.icons{
+    margin: 20px 0;
+}
+.icons li a i{
+   font-size: 1.2em;
+   color: rgb(185, 156, 26);
+}
+.icons li{
+    border: 2px solid rgb(185, 156, 26);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.logo{
+    color: rgb(185, 156, 26);
+    font-weight: 900;
+    font-size: 2em;
+}
+body{
+    background-color:rgb(23, 97, 97);
+}
+.nav-icon{
+    display: none;
+    cursor: pointer;
+    padding: .5em .75em;
+    align-items: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+    color: black;
+    justify-content: center;
+}
+
+/* Mobile Device */
+@media screen and (max-width:480px) {
+    #maim-header{
+        padding: 0;
+    }
+    
+ .class{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+ }   
+
+ .nav-icon{
+    display: block;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    color: black;
+    display: flex;
+ }
+
+ nav{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+ }
+ ul{
+    flex-direction: column;
+    gap: 0;
+ }
+ section{
+    text-align: center;
+ }
+ .image img{
+    width: 40vw;
+    margin: auto;
+ }
+
+}
