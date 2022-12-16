@@ -105,7 +105,12 @@ body{
 li a:hover{
     color: black;
 }
-
+li a i:hover{
+    color: black;
+}
+li a i:hover ~ .icons li{
+    border-color:black ;
+}
 /* Mobile Device */
 @media screen and (max-width:480px) {
     #maim-header{
