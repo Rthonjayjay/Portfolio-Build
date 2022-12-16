@@ -11,6 +11,7 @@
 
 p{
     font-size: 1.2em;
+    margin: 15px 0;
 }
 
 .container{
@@ -23,7 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 0;
 }
 
 ul{
@@ -55,14 +56,14 @@ section{
 }
 
 h4{
-    margin: 15px 0;
+    margin: 50px 0;
     font-size: 1.5em;
     color:rgb(185, 156, 26);
     font-weight: 700;
 }
 
 h1{
-    margin: 15px 0;
+    margin: 30px 0;
     font-size: 3em;
 }
 
@@ -101,6 +102,9 @@ body{
     color: black;
     justify-content: center;
 }
+li a:hover{
+    color: black;
+}
 
 /* Mobile Device */
 @media screen and (max-width:480px) {
@@ -115,23 +119,18 @@ body{
  }   
 
  .nav-icon{
-    display: block;
+    /* display: block;
     position: absolute;
     right: 4%;
-    top: 2%;
+    top: 14%; */
     color: black;
     display: flex;
  }
-
- nav{
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    max-height: 0;
-    overflow: hidden;
+ .nav-icon i:hover ~ nav{
+    display: block;
  }
  ul{
+    display: block;
     flex-direction: column;
     gap: 0;
  }
@@ -139,8 +138,37 @@ body{
     text-align: center;
  }
  .image img{
-    width: 40vw;
+    width: 100%;
     margin: auto;
  }
-
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    flex-direction: column;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.icons li a i:hover{
+    color: black;
+}
+header{
+    display: flex;
+    position: relative;
+}
+nav{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    opacity: 0;
+    margin-block: 20px;
+    width: 100%;
+}
+.nav-icon:hover \ nav{
+    opacity: 1;
+}
 }
